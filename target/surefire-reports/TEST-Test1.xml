@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="2" name="Test1" time="4.55" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.2.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/wangkai/wjjWorkSpace/wjjGit/restassuredDemo"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/wangkai/wjjWorkSpace/wjjGit/restassuredDemo"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/kn/nhb5xbxj55l4dwn16x_3d9qm0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/wangkai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14"/>
+    <property name="user.home" value="/Users/wangkai"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wangkai"/>
+    <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.2.5 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="java.ext.dirs" value="/Users/wangkai/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Test1" name="testSpec" time="1.732"/>
+  <testcase classname="Test1" name="testTesterHome" time="1.832"/>
+  <testcase classname="Test1" name="testTesterHomeApi" time="0.48"/>
+  <testcase classname="Test1" name="testTesterHomeJson" time="0.489">
+    <failure message="1 expectation failed.
+JSON path topics.findAll{topic-&gt;topic.id==16175}.title doesn&apos;t match.
+Expected: a collection containing &quot;[深圳] 阿里巴巴 Lazada 深圳研发中心：招聘高级测试开发工程师 / 专家 [工具平台开发方向，可以年前面试，年后入职]&quot;
+  Actual: []
+" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+JSON path topics.findAll{topic-&gt;topic.id==16175}.title doesn&apos;t match.
+Expected: a collection containing &quot;[深圳] 阿里巴巴 Lazada 深圳研发中心：招聘高级测试开发工程师 / 专家 [工具平台开发方向，可以年前面试，年后入职]&quot;
+  Actual: []
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:470)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:632)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:264)
+	at io.restassured.specification.ResponseSpecification$content$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at io.restassured.specification.ResponseSpecification$content$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:247)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+	at Test1.testTesterHomeJson(Test1.java:40)
+</failure>
+    <system-out>HTTP/1.1 200 OK
+Server: nginx/1.10.2
+Date: Tue, 27 Nov 2018 12:58:18 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+ETag: W/&quot;7f41f5032bd28cc46e3a5dcf75e5b90f&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: b4c19361-7504-402a-a276-04c329dda923
+X-Runtime: 0.067452
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+{
+    &quot;topics&quot;: [
+        {
+            &quot;id&quot;: 17018,
+            &quot;title&quot;: &quot;TesterHome ??????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-26T10:50:43.618+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-26T10:55:54.287+08:00&quot;,
+            &quot;replied_at&quot;: null,
+            &quot;replies_count&quot;: 0,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 24,
+            &quot;last_reply_user_id&quot;: null,
+            &quot;last_reply_user_login&quot;: null,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: &quot;2018-11-26T10:55:54.279+08:00&quot;,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 3623,
+                &quot;login&quot;: &quot;026&quot;,
+                &quot;name&quot;: &quot;&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/3623.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 212,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17016,
+            &quot;title&quot;: &quot;TesterHome ???????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-25T22:45:17.684+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:57:28.418+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T20:57:28.391+08:00&quot;,
+            &quot;replies_count&quot;: 7,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 24,
+            &quot;last_reply_user_id&quot;: 115,
+            &quot;last_reply_user_login&quot;: &quot;oscarxie&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 115,
+                &quot;login&quot;: &quot;oscarxie&quot;,
+                &quot;name&quot;: &quot;??&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/115.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 391,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17046,
+            &quot;title&quot;: &quot;????? minicap ???????????? Destroying virtual display&quot;,
+            &quot;created_at&quot;: &quot;2018-11-27T20:44:11.574+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:45:55.692+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T20:45:55.675+08:00&quot;,
+            &quot;replies_count&quot;: 1,
+            &quot;node_name&quot;: &quot;STF&quot;,
+            &quot;node_id&quot;: 137,
+            &quot;last_reply_user_id&quot;: 39084,
+            &quot;last_reply_user_login&quot;: &quot;raoxj&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 39084,
+                &quot;login&quot;: &quot;raoxj&quot;,
+                &quot;name&quot;: &quot;Celia&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/39084/1f555e.jpeg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 20,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17015,
+            &quot;title&quot;: &quot;[??] ?????????????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-25T20:36:37.704+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:40:50.577+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T20:40:50.560+08:00&quot;,
+            &quot;replies_count&quot;: 13,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 37,
+            &quot;last_reply_user_id&quot;: 12,
+            &quot;last_reply_user_login&quot;: &quot;anonymous&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 12,
+                &quot;login&quot;: &quot;anonymous&quot;,
+                &quot;name&quot;: &quot;??&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/12.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 1346,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16423,
+            &quot;title&quot;: &quot;?? [??] shopee ?????????   ??????????&quot;,
+            &quot;created_at&quot;: &quot;2018-10-12T10:04:35.312+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:36:34.328+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T20:36:34.301+08:00&quot;,
+            &quot;replies_count&quot;: 19,
+            &quot;node_name&quot;: &quot;??&quot;,
+            &quot;node_id&quot;: 19,
+            &quot;last_reply_user_id&quot;: 37887,
+            &quot;last_reply_user_login&quot;: &quot;Connie-tian&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 37882,
+                &quot;login&quot;: &quot;Bigvae&quot;,
+                &quot;name&quot;: &quot;mikiwang&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/37882/1bf083.jpeg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 1488,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16927,
+            &quot;title&quot;: &quot;Java or Python????????????????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-19T20:23:14.961+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:29:03.431+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T20:29:03.405+08:00&quot;,
+            &quot;replies_count&quot;: 13,
+            &quot;node_name&quot;: &quot;???&quot;,
+            &quot;node_id&quot;: 36,
+            &quot;last_reply_user_id&quot;: 27423,
+            &quot;last_reply_user_login&quot;: &quot;Verckolf&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 5,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 22711,
+                &quot;login&quot;: &quot;LMD&quot;,
+                &quot;name&quot;: &quot;Raymond&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/22711/395fcb.png!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 941,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16936,
+            &quot;title&quot;: &quot;????---??????? 10 ???????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-20T10:52:03.342+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:26:08.473+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T20:26:08.457+08:00&quot;,
+            &quot;replies_count&quot;: 17,
+            &quot;node_name&quot;: &quot;?????&quot;,
+            &quot;node_id&quot;: 2,
+            &quot;last_reply_user_id&quot;: 39224,
+            &quot;last_reply_user_login&quot;: &quot;520290070&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 11,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 23480,
+                &quot;login&quot;: &quot;wangshan1&quot;,
+                &quot;name&quot;: &quot;????&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/23480/15d9e0.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 1040,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16943,
+            &quot;title&quot;: &quot;ThoughtWorks ?????????????????????????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-20T16:32:46.498+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:21:26.220+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T20:21:26.198+08:00&quot;,
+            &quot;replies_count&quot;: 4,
+            &quot;node_name&quot;: &quot;??&quot;,
+            &quot;node_id&quot;: 19,
+            &quot;last_reply_user_id&quot;: 38976,
+            &quot;last_reply_user_login&quot;: &quot;wenyuntian&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 38976,
+                &quot;login&quot;: &quot;wenyuntian&quot;,
+                &quot;name&quot;: &quot;wenyuntian&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/38976/c6975a.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 625,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17045,
+            &quot;title&quot;: &quot;easy mock ?? (MAC)&quot;,
+            &quot;created_at&quot;: &quot;2018-11-27T20:02:10.853+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:05:27.770+08:00&quot;,
+            &quot;replied_at&quot;: null,
+            &quot;replies_count&quot;: 0,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 145,
+            &quot;last_reply_user_id&quot;: null,
+            &quot;last_reply_user_login&quot;: null,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1011,
+                &quot;login&quot;: &quot;DoctorQ&quot;,
+                &quot;name&quot;: &quot;??&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/1011.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 31,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17033,
+            &quot;title&quot;: &quot;TesterHome ?? 2018? ??????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-26T22:44:41.770+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T19:55:15.256+08:00&quot;,
+            &quot;replied_at&quot;: null,
+            &quot;replies_count&quot;: 0,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 24,
+            &quot;last_reply_user_id&quot;: null,
+            &quot;last_reply_user_login&quot;: null,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 115,
+                &quot;login&quot;: &quot;oscarxie&quot;,
+                &quot;name&quot;: &quot;??&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/115.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 18,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17036,
+            &quot;title&quot;: &quot;?? adb devices ????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-27T11:03:37.336+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T19:23:06.311+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T19:23:06.294+08:00&quot;,
+            &quot;replies_count&quot;: 6,
+            &quot;node_name&quot;: &quot;Appium&quot;,
+            &quot;node_id&quot;: 23,
+            &quot;last_reply_user_id&quot;: 21243,
+            &quot;last_reply_user_login&quot;: &quot;i-Stone&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 27053,
+                &quot;login&quot;: &quot;minfang603&quot;,
+                &quot;name&quot;: &quot;??&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/27053/3303f1.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 173,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17030,
+            &quot;title&quot;: &quot;????????????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-26T21:16:00.858+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T20:22:52.979+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T19:21:43.705+08:00&quot;,
+            &quot;replies_count&quot;: 24,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 37,
+            &quot;last_reply_user_id&quot;: 12,
+            &quot;last_reply_user_login&quot;: &quot;anonymous&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 12,
+                &quot;login&quot;: &quot;anonymous&quot;,
+                &quot;name&quot;: &quot;??&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/12.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 1090,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17044,
+            &quot;title&quot;: &quot;????????????????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-27T18:29:41.075+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T19:12:33.537+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T19:12:12.439+08:00&quot;,
+            &quot;replies_count&quot;: 2,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 25,
+            &quot;last_reply_user_id&quot;: 1706,
+            &quot;last_reply_user_login&quot;: &quot;yangchengtest&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 23480,
+                &quot;login&quot;: &quot;wangshan1&quot;,
+                &quot;name&quot;: &quot;????&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/23480/15d9e0.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 68,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16981,
+            &quot;title&quot;: &quot;???????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-22T20:22:34.188+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T18:40:02.032+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T18:40:02.010+08:00&quot;,
+            &quot;replies_count&quot;: 2,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 145,
+            &quot;last_reply_user_id&quot;: 15561,
+            &quot;last_reply_user_login&quot;: &quot;zyanycall&quot;,
+            &quot;excellent&quot;: 1,
+            &quot;likes_count&quot;: 2,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 38409,
+                &quot;login&quot;: &quot;youzancoder&quot;,
+                &quot;name&quot;: &quot;??????&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/38409/c59d23.png!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 942,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17029,
+            &quot;title&quot;: &quot;?????? app ????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-26T18:01:31.642+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T18:02:23.588+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T18:02:23.570+08:00&quot;,
+            &quot;replies_count&quot;: 6,
+            &quot;node_name&quot;: &quot;??&quot;,
+            &quot;node_id&quot;: 20,
+            &quot;last_reply_user_id&quot;: 11866,
+            &quot;last_reply_user_login&quot;: &quot;jinglebell&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 38432,
+                &quot;login&quot;: &quot;a821877545&quot;,
+                &quot;name&quot;: &quot;-YK&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/38432/65df4d.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 430,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16854,
+            &quot;title&quot;: &quot;?????????????????????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-14T00:14:01.328+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T17:08:02.804+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T17:08:02.778+08:00&quot;,
+            &quot;replies_count&quot;: 29,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 12,
+            &quot;last_reply_user_id&quot;: 38913,
+            &quot;last_reply_user_login&quot;: &quot;Hello-T&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 19593,
+                &quot;login&quot;: &quot;dannyxch&quot;,
+                &quot;name&quot;: &quot;???&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/19593/0ef533.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 1352,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16605,
+            &quot;title&quot;: &quot;docker + selenium + jenkins ????????&quot;,
+            &quot;created_at&quot;: &quot;2018-10-25T17:48:38.427+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T18:08:15.024+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T17:06:59.556+08:00&quot;,
+            &quot;replies_count&quot;: 7,
+            &quot;node_name&quot;: &quot;Docker&quot;,
+            &quot;node_id&quot;: 48,
+            &quot;last_reply_user_id&quot;: 32070,
+            &quot;last_reply_user_login&quot;: &quot;Danielyan86&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 8,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 32070,
+                &quot;login&quot;: &quot;Danielyan86&quot;,
+                &quot;name&quot;: &quot;??&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/32070/c1ba74.jpeg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 989,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17032,
+            &quot;title&quot;: &quot;????????????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-26T21:42:09.624+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T17:45:44.749+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T17:05:40.202+08:00&quot;,
+            &quot;replies_count&quot;: 7,
+            &quot;node_name&quot;: &quot;??&quot;,
+            &quot;node_id&quot;: 20,
+            &quot;last_reply_user_id&quot;: 19162,
+            &quot;last_reply_user_login&quot;: &quot;mixure&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 25587,
+                &quot;login&quot;: &quot;_comeSoon&quot;,
+                &quot;name&quot;: &quot;_comeSoon&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/25587/8d472d.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 390,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 16635,
+            &quot;title&quot;: &quot;[??] ????? - ????????? / [??] &quot;,
+            &quot;created_at&quot;: &quot;2018-10-29T12:42:47.879+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T16:48:57.353+08:00&quot;,
+            &quot;replied_at&quot;: &quot;2018-11-27T16:48:57.304+08:00&quot;,
+            &quot;replies_count&quot;: 8,
+            &quot;node_name&quot;: &quot;??&quot;,
+            &quot;node_id&quot;: 19,
+            &quot;last_reply_user_id&quot;: 30531,
+            &quot;last_reply_user_login&quot;: &quot;xdg8710265&quot;,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 27923,
+                &quot;login&quot;: &quot;smy_chris&quot;,
+                &quot;name&quot;: &quot;???&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/27923/3b53a3.png!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 1062,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17042,
+            &quot;title&quot;: &quot;[??] ??????????? ????? (??)&quot;,
+            &quot;created_at&quot;: &quot;2018-11-27T16:46:40.005+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T16:51:39.037+08:00&quot;,
+            &quot;replied_at&quot;: null,
+            &quot;replies_count&quot;: 0,
+            &quot;node_name&quot;: &quot;??&quot;,
+            &quot;node_id&quot;: 19,
+            &quot;last_reply_user_id&quot;: null,
+            &quot;last_reply_user_login&quot;: null,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 1,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 24117,
+                &quot;login&quot;: &quot;Mocat&quot;,
+                &quot;name&quot;: &quot;????&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/24117/34e635.jpg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 134,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        },
+        {
+            &quot;id&quot;: 17041,
+            &quot;title&quot;: &quot;??????????&quot;,
+            &quot;created_at&quot;: &quot;2018-11-27T16:31:25.538+08:00&quot;,
+            &quot;updated_at&quot;: &quot;2018-11-27T16:31:25.538+08:00&quot;,
+            &quot;replied_at&quot;: null,
+            &quot;replies_count&quot;: 0,
+            &quot;node_name&quot;: &quot;????&quot;,
+            &quot;node_id&quot;: 145,
+            &quot;last_reply_user_id&quot;: null,
+            &quot;last_reply_user_login&quot;: null,
+            &quot;excellent&quot;: 0,
+            &quot;likes_count&quot;: 0,
+            &quot;suggested_at&quot;: null,
+            &quot;closed_at&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1406,
+                &quot;login&quot;: &quot;dragonking0318&quot;,
+                &quot;name&quot;: &quot;????QA&quot;,
+                &quot;avatar_url&quot;: &quot;/uploads/user/avatar/1406/5b4fe4.jpeg!large&quot;,
+                &quot;abilities&quot;: {
+                    &quot;update&quot;: false,
+                    &quot;destroy&quot;: false
+                }
+            },
+            &quot;hits&quot;: 45,
+            &quot;abilities&quot;: {
+                &quot;update&quot;: false,
+                &quot;destroy&quot;: false,
+                &quot;ban&quot;: false,
+                &quot;excellent&quot;: false,
+                &quot;unexcellent&quot;: false,
+                &quot;close&quot;: false,
+                &quot;open&quot;: false
+            }
+        }
+    ]
+}
+</system-out>
+  </testcase>
+  <testcase classname="Test1" name="testXML" time="0.017">
+    <failure message="Connection refused" type="java.net.ConnectException">java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2035)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1441)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1228)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1638)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:167)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at Test1.testXML(Test1.java:45)
+</failure>
+  </testcase>
+</testsuite>
